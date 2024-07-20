@@ -59,9 +59,9 @@ function printResults(weatherData) {
    const forecastDateString = forecastDate.toISOString().split('T')[0];
 
    if (!todaysForecastDisplayed && forecastDate.getDate() === today.getDate()) {
-    // Create new card for today's forecast
+
     createForecastCard(forecast, true, forecastDate, forecastDateString);
-    todaysForecastDisplayed = true; // Mark today's forecast as displayed 
+    todaysForecastDisplayed = true;
   }
 });
 weatherData.list.forEach(forecast => {
